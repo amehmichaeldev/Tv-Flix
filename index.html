@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TV-Flix Entertament </title>
+    <!----custom css link-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="img/logo.svg" rel="icon">
+      <!----custom boxicons link-->
+      <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <!----custom remixicons link-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" >
+    
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-9151e50d-ee50-46d5-94e9-4c9aee8f771b" data-elfsight-app-lazy></div>
+</head>
+<body>
+    <header>
+     <img src="img/logo.svg" alt="TV-Flix">       
+
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+			<li><a href="videos.html">Videos</a></li>
+            <li><a href="Movies.html">Movies</a></li>
+			<li><a href="Live TV-Shows.html">Live TV-Shows</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+         <!----  <li><a href="about.html">About</a></li>---> 
+    <!-- https://www.youtube.com/results?search_query=date+rush+live+on+tv3+today  -->
+	<!--https://www.youtube.com/results?search_query=gh+one+duevt   logo class="devv"  -->
+    <section class="hero"> 
+        <div class="hero-text">
+                <br><br><br><br>
+                <img class="devv" src="img/godwind.png" alt="Godwin">
+         <br><br><br>
+         <h1> welcome!<br> Get the best Entertament on TV-Flix </h1>
+		  <h3 class="ch bbt">Support me <a href="" style="background-color:red;">Buy me coffee</a></h3> 
+		    <p>Get the best Entertament here, like and share my Mobile App to friends and familys </p>
+			<center> 
+			 <a href="" style="background-color:red;" class="bt"> Watch videos earn cash</a>  <a href="" style="background-image: url(img/gplay.jpg);" class="bt" id="Install">Install app now</a>
+             <style>
+                 .bt{
+                   
+                  background-repeat: no-repeat;
+                 }
+             </style>
+			</center>
+			  <br><br>
+              <br><br>
+         
+       <a href="free videos.html" class="ctaa"><i class="ri-play-fill" target="blank_seif"></i>watch free videos</a>
+         <a href="tel:09039483908" >contact me</a>
+         <br>
+        </div>
+      
+        <div class="hero-img">
+            <video src="video/sgc.mp4" width="600px" height="500px" controls muted poster="img/logo.svg">
+            </video>
+           <!---- <img src="img/logo.svg" alt="Godwin">-->
+        </div>
+    </section>
+  
+    <div class="icons">
+        <a href="https://24b2f92957b4490b9010cb6d352d38ad.elf.site"><i class="ri-youtube-line"></i></a>
+        <a href=""><i class="ri-instagram-line"></i></a>
+        <a href=""><i class="ri-facebook-line"></i></a>
+        <a href=""><i class="ri-whatsapp-line"></i></a>
+    </div>
+
+
+<!--custom js link-->
+<script src="https://unpkg.com/scrollreveal"></script>
+<!--custom js link-->
+
+
+<script>
+let menu = document.querySelector('#menu-icon');
+let navlist = document.querySelector('.navlist');
+
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+ navlist.classList.toggle('open');
+};
+const sr = scrollReveal ({
+distance: '65px',
+duration: 2600,
+delay: 450,
+reset: true
+});
+sr.reveal('.hero-text',{delay:200, origin:'top'});
+sr.reveal('.hero-img',{delay:450, origin:'top'});
+sr.reveal('.icons',{delay:500, origin:'left'});
+</script>
+</body>
+</html>
